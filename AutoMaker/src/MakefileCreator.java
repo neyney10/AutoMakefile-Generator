@@ -40,6 +40,15 @@ class MakefileCreator {
     }
 
 
+    public String createObjectCleaner() {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("clean:\n");
+        sb.append(TAB +"rm -f *.o "+outputFilename);
+
+        return sb.toString();
+    }
+
     public String createMakeFileString(Dependency rootFile) {
         StringBuilder sb = new StringBuilder();
         ArrayList<Dependency> dep = rootFile.getDependencies();
@@ -63,6 +72,8 @@ class MakefileCreator {
         sb.append("\n\n");
         sb.append(createObjectDependency(rootFile));
         
+        sb.append("\n\n");
+        sb.append(createObjectCleaner());
 
         return sb.toString();
     }
