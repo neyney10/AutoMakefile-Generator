@@ -8,7 +8,7 @@
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "args": "mytest.cpp",
+            "args": "TreeTest.cpp",
             "mainClass": "${file}"
         },
         {

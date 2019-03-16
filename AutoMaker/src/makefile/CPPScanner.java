@@ -1,3 +1,5 @@
+package makefile;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -9,7 +11,7 @@ public class CPPScanner {
     private String currentPath; // directory to scan
     private ArrayList<String> filenames;
 
-    CPPScanner(String path) {
+    public CPPScanner(String path) {
         this.currentPath = path;
         filenames = new ArrayList<>();
     }

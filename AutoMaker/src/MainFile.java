@@ -1,7 +1,6 @@
 
-package AutoMaker.src;
-
-class MainFile {
+import makefile.*;
+public class MainFile {
     final static String programVersion = "1.1-Beta";
     final static char TAB = '\t';
 

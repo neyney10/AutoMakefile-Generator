@@ -1,20 +1,21 @@
+package makefile;
 import java.util.ArrayList;
 
-class Dependency {
+public class Dependency {
     private String filepath;
     private Boolean hppExists;
     private Boolean cppExists;
     private ArrayList<Dependency> dependencies;
 
-    Dependency(String filepath) {
+    public Dependency(String filepath) {
         this(filepath, false, false);
     }
 
-    Dependency(String filepath, Boolean isHeaderExist) {
+    public Dependency(String filepath, Boolean isHeaderExist) {
         this(filepath, isHeaderExist, false);
     }
 
-    Dependency(String filepath, Boolean isHeaderExist, Boolean isCodeExist) {
+    public Dependency(String filepath, Boolean isHeaderExist, Boolean isCodeExist) {
         this.filepath = filepath;
         this.hppExists = isHeaderExist;
         this.cppExists = isCodeExist;

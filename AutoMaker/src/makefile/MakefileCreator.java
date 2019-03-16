@@ -1,10 +1,11 @@
+package makefile;
 import java.util.ArrayList;
 
-class MakefileCreator {
+public class MakefileCreator {
     final char TAB = '\t';
     private String outputFilename;
 
-    MakefileCreator(String outputFilename) {
+    public MakefileCreator(String outputFilename) {
         this.outputFilename = outputFilename;
     }
 
